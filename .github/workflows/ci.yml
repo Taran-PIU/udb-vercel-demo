@@ -1,0 +1,41 @@
+name: CI/CD
+
+on:
+    push:
+        branches:
+            -main
+
+jobs:
+    builds:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v3
+              
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                node-version: 18
+
+            - name: Install Dependencies Backend
+              run: |
+                 cd backend
+                 npm install
+
+            - name: Install Dependencies Frontend
+              run: |
+                 cd frontend
+                    npm install
+
+            - name: Build Frontend
+              run: |
+                 cd frontend
+                 npm run build 
+
+            - name: Move Frontend files to Backend
+              run: |
+                 rm -rf backend/build
+                 mv frontend/build backend/build
+
+            
