@@ -1,0 +1,256 @@
+* {
+  list-style-type: none;
+}
+body {
+  background-color: rgb(23, 23, 23);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  /* margin-top: 25px; */
+}
+.navListL {
+  display: flex;
+  margin-left: 300px;
+}
+.navListL > li {
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+.logo {
+  display: flex; /* Ensures proper alignment */
+  align-items: center; /* Centers the image vertically */
+  justify-content: center;
+  width: 150px; /* Centers the image horizontally */
+  height: 150px;
+  margin-left: 40px;
+  background: transparent; /* Adjust height as needed */
+}
+
+.logo > img {
+  height: 100%;
+  width: auto; /* Maintains aspect ratio */
+  max-height: 100%; /* Prevents overflow */
+  object-fit: contain;
+  filter: brightness(0.7) contrast(1.5);
+  mix-blend-mode: screen; /* Ensures image fits well */
+}
+
+.signup {
+  margin-right: 190px;
+  font-size: 16px;
+}
+
+.LoginSub {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.loginOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.loginBoxes > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBoxes > form > input {
+  height: 50px;
+  width: 350px;
+  margin-bottom: 10px;
+  margin-right: 60px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.loginButton {
+  height: 50px;
+  width: 350px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  box-sizing: border-box;
+  background: linear-gradient(to right, green, yellow);
+  border: none;
+  padding-left: 15px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.or {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.optionBoxes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.optionBoxes > button {
+  background-color: transparent;
+  outline: none;
+}
+
+.loginOption {
+  color: white;
+  display: flex;
+  height: 50px;
+  width: 360px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, green, yellow) 1;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+}
+
+.loginOptionReverse {
+  color: white;
+  display: flex;
+  height: 50px;
+  width: 360px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  border: 2px solid;
+  border-image: linear-gradient(to left, green, yellow) 1;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+}
+
+.lforgotPassword {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: baseline;
+  font-weight: 600;
+  margin-top: 40px;
+  gap: 35px;
+}
+.lforgotPassword > a {
+  color: white;
+}
+
+.lfp {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.lfp > a {
+  color: white;
+  font-size: 15px;
+}
+
+.other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  width: 230px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+}
+
+.other:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background: linear-gradient(to right, green, yellow);
+  text-align: center;
+  text-align: center;
+  width: 230px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+}
+
+.others {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  width: 330px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px solid white;
+}
+
+.others:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background: linear-gradient(to right, green, yellow);
+  text-align: center;
+  text-align: center;
+  width: 330px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px solid white;
+}
+
+.login-Option {
+  color: white;
+  display: flex;
+  height: 50px;
+  width: 280px;
+  margin-bottom: 10px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, green, yellow) 1;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-OptionReverse {
+  color: white;
+  display: flex;
+  height: 50px;
+  width: 280px;
+  margin-bottom: 10px;
+  border: 2px solid;
+  border-image: linear-gradient(to left, green, yellow) 1;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 100px !important;
+  justify-content: space-between;
+}

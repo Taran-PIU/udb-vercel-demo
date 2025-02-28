@@ -1,0 +1,56 @@
+
+networks:
+    my_network:
+      driver: bridge
+services:
+  backend:
+    build: 
+      context: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./frontend/build:/frontend/build
+    # environment:
+    #   - MONGODB_URI: ${MONGODB_URI}
+    #   - JWT_SECRET: ${JWT_SECRET}
+    #   - GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+    #   - GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
+    #   - GITHUB_CLIENT_ID: ${GH_CLIENT_ID}
+    #   - GITHUB_CLIENT_SECRET: ${GH_CLIENT_SECRET}
+    env_file:
+      - ./backend/.env
+      - .env
+    # depends_on:
+    #   - mongo
+    # environment:
+    #   - MONGODB_URI= ${MONGODB_URI}
+    #   - JWT_SECRET= ${JWT_SECRET}
+    networks:
+      - my_network
+
+    # network_mode: "host"
+
+  frontend:
+    build: 
+      context: ./frontend
+    command: npm install --legacy-peer-deps
+    volumes:
+      - ./frontend/build:/frontend/build
+    image: mern
+    ports:
+      - "3000:3000"
+      # - "3001:3001"
+    depends_on:
+      - backend
+
+  
+
+  # mongo:
+  #   image: mongo
+  #   ports:
+  #     - "27017:27017"
+  #   volumes:
+  #     - mongo-data:/data/db
+
+# volumes:
+#   mongo-data:

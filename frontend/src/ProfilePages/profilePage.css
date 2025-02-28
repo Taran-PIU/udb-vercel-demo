@@ -1,0 +1,294 @@
+.heading {
+  color: white;
+}
+
+/* Center the container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181818; /* Dark mode */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Profile Picture */
+.profile-pic-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2d2d2d;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Upload Form */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.upload-form-res {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin-left: 140px;
+}
+
+/* File Upload Button */
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.custom-file-uploadres {
+  display: flex;
+  padding: 5px 5px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.custom-file-upload:hover {
+  background-color: #45a049;
+}
+
+/* Hide the default file input */
+input[type='file'] {
+  display: none;
+}
+
+/* Save Button */
+.upload-form button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.upload-form button:hover {
+  background-color: #1976d2;
+}
+
+.upload-form-res button {
+  padding: 4px 7px;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.upload-form button:hover {
+  background-color: #1976d2;
+}
+
+.profileFormBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.profileForm {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  border: 2px solid white;
+  padding-left: 20px;
+  padding-right: 35px;
+}
+
+.profileForm > h3 {
+  text-align: center;
+}
+
+.fieldSetOuterBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.fieldSetBox {
+  width: 310px;
+}
+
+fieldset > legend {
+  color: yellow;
+  font-weight: 600;
+}
+.fieldSetBox > label {
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+.fieldSetBox > input {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.skillsOuterBox {
+  display: flex;
+  margin-left: 2px;
+  width: 986px;
+  height: 250px;
+  margin-top: 20px;
+  padding: 10px;
+  gap: 10px;
+}
+.skillsInnerBox {
+  width: 490px;
+}
+
+.skillsInnerBox > h3 {
+  text-align: center;
+}
+
+.skillsInnerBox > label {
+  color: yellow;
+  margin-left: 12px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+.skillsInnerBox > input {
+  margin-left: 12px;
+  width: 450px;
+  height: 30px;
+}
+
+.finalOuterBox {
+  display: flex;
+  width: 1008px;
+  margin-top: 10px;
+  margin-left: 4px;
+  gap: 10px;
+}
+
+.finalInnerBox1 {
+  width: 495px;
+  height: 200px;
+  padding: 10px;
+  color: yellow;
+  font-size: 18px;
+}
+
+.finalInnerBox1 > input[type='checkbox'] {
+  width: 10px;
+}
+
+.finalInnerBox1 > h3 {
+  text-align: center;
+  color: white;
+}
+
+.finalInnerBox2 > h3 {
+  text-align: center;
+  color: white;
+}
+
+.finalInnerBox2 > input,
+select {
+  padding-left: 15px;
+}
+
+.submit {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 300px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(to right, green, yellow);
+}
+
+/* Investor Styles */
+
+.investorBox > form {
+  padding: 20px;
+}
+.fieldsetInv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fieldSetBoxInv {
+  width: 500px;
+}
+
+.fieldSetBoxInv > label {
+  margin-right: 1px;
+  padding-left: 0px;
+}
+
+.fieldSetBoxInv > input {
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.outerBoxInv {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Company Styles */
+
+.fieldSetBoxCom {
+  width: 350px;
+}
+.fieldSetBoxComf {
+  width: 450px;
+}
+
+.fieldSetBoxCom > label {
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+.fieldSetBoxCom > input {
+  width: 320px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.funding {
+  margin-top: 10px;
+}
+
+.fundingSelect {
+  width: 250px;
+  height: 25px;
+  margin-bottom: 10px;
+}

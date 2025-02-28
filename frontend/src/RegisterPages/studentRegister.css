@@ -1,0 +1,129 @@
+* {
+  list-style-type: none;
+}
+body {
+  background-color: rgb(23, 23, 23);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  /* margin-top: 25px; */
+}
+.navListL {
+  display: flex;
+  margin-left: 300px;
+}
+.navListL > li {
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+.logo {
+  display: flex; /* Ensures proper alignment */
+  align-items: center; /* Centers the image vertically */
+  justify-content: center;
+  width: 150px; /* Centers the image horizontally */
+  margin-left: 40px;
+  height: 150px;
+  background: transparent; /* Adjust height as needed */
+}
+
+.logo > img {
+  height: 100%;
+  width: auto; /* Maintains aspect ratio */
+  max-height: 100%; /* Prevents overflow */
+  object-fit: contain;
+  filter: brightness(0.7) contrast(1.5);
+  mix-blend-mode: screen; /* Ensures image fits well */
+}
+
+.signup {
+  margin-right: 190px;
+  font-size: 16px;
+}
+
+.LoginSub {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.registerBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+form > label {
+  font-size: 16px;
+  color: yellow;
+  margin-left: 10px;
+}
+.registerBox > form > input {
+  width: 350px;
+  height: 35px;
+  border: 2px solid;
+  /* border-image: linear-gradient(to right, green, yellow) 1; */
+  border-radius: 10px;
+  outline-color: linear-gradient(to right, green, yellow) 1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  background-color: rgb(207, 207, 207);
+}
+.registerBox > form > select {
+  width: 350px;
+  height: 35px;
+  border: 2px solid;
+  /* border-image: linear-gradient(to right, green, yellow) 1; */
+  border-radius: 10px;
+  outline-color: linear-gradient(to right, green, yellow) 1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  background-color: rgb(207, 207, 207);
+}
+.saveButton {
+  height: 30px;
+  width: 150px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+  box-sizing: border-box;
+  background: linear-gradient(to right, green, yellow);
+  border-radius: 10px;
+  padding-right: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.forgotPassword {
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.forgotPassword > a {
+  color: white;
+}
+
+.rfooter {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 50px;
+  justify-content: space-between;
+}
