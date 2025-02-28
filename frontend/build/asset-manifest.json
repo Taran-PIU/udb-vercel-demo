@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e7fc8a5.css",
+    "main.js": "/static/js/main.2c90a43b.js",
+    "static/media/Your paragraph text (4).png": "/static/media/Your paragraph text (4).24a6299193690e366e55.png",
+    "static/media/Your_paragraph_text__4_-removebg-preview.png": "/static/media/Your_paragraph_text__4_-removebg-preview.f6e3faf88944b682b038.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.5e7fc8a5.css",
+    "static/js/main.2c90a43b.js"
+  ]
+}
