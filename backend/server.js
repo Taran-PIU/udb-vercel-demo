@@ -7,8 +7,6 @@ const dotenv = require('dotenv');
 const https = require('https');
 const path = require('path');
 const passport = require('./config/passportConfig');
-const s3 = require('./config/s3');
-const multerS3 = require("multer-s3");
 
 //Import Routess
 const studentRegister = require('./routes/register/studentregister');
@@ -148,7 +146,7 @@ app.use('/reset-password', resetPassword);
 
 app.get('/', (req, res) => {
   res.send('Hello from server');
-});
+}); 
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found' });
