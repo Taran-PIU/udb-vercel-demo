@@ -62,7 +62,7 @@ function StudentLogin() {
     console.log('handleclick invoked');
 
     try {
-      const response = await fetch('http://localhost:5000/login/student', {
+      const response = await fetch('https://udb-vercel-demo.vercel.app/login/student', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

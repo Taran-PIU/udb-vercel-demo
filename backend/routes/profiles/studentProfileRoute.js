@@ -16,7 +16,7 @@ const router = express.Router();
 
 router.get('/', authMiddleware, studentGetProile);
 router.patch('/', studentAuthMiddleware, studentPatchProfile);
-router.patch('/pfp', uploadFile, studentAuthMiddleware, studentPatchPic);
-router.patch('/res', uploadRes, studentAuthMiddleware, studentPatchRes);
+// router.patch('/pfp', uploadFile, studentAuthMiddleware, studentPatchPic);
+// router.patch('/res', uploadRes, studentAuthMiddleware, studentPatchRes);
 
 module.exports = router;
