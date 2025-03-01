@@ -52,7 +52,7 @@ app.use(
         console.log("Cors alloweddd",origin)
         callback(null,true);
       }else{
-        console.log("Cors not alloweddd")
+        console.log("Cors not alloweddd",origin)
         callback(new Error("Cors not alloweddd"));
       }
     },
