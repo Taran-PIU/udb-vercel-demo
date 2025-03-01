@@ -38,7 +38,7 @@ app.use(express.urlencoded({ extended: true }));
 // );
 
 
-const origins = [ "https://www.udbhavx.com/",'http://localhost:3000','http://localhost:5000','https://udb-vercel-demo.vercel.app/'];
+const origins = [ "https://www.udbhavx.com/",'http://localhost:3000','http://localhost:5000'];
 
 app.use((req,res,next)=>{
   console.log("INc Reqq:",req.method,req.url,"from",req.headers.origin);
